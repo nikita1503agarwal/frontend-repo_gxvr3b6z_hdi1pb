@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Pillars from "./components/Pillars";
 import Section from "./components/Section";
 import Process from "./components/Process";
 import Logos from "./components/Logos";
@@ -81,6 +82,7 @@ function App() {
       <Hero />
 
       <main>
+        <Pillars />
         <Section {...chatbot} />
         <Section {...voice} />
         <Section {...automation} />
