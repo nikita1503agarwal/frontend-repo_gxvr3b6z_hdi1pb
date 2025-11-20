@@ -5,6 +5,9 @@ import Section from "./components/Section";
 import Process from "./components/Process";
 import Logos from "./components/Logos";
 import Footer from "./components/Footer";
+import CaseStudies from "./components/CaseStudies";
+import CTA from "./components/CTA";
+import HaloMarquee from "./components/HaloMarquee";
 
 function App() {
   const chatbot = {
@@ -82,7 +85,9 @@ function App() {
       <Hero />
 
       <main>
+        <HaloMarquee />
         <Pillars />
+        <CaseStudies />
         <Section {...chatbot} />
         <Section {...voice} />
         <Section {...automation} />
@@ -91,18 +96,7 @@ function App() {
         <Section {...websites} />
         <Process />
         <Logos />
-
-        <section id="cta" className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rounded-2xl border border-sky-100 bg-gradient-to-br from-sky-50 to-blue-50 p-10 text-center shadow-sm">
-              <h3 className="text-2xl sm:text-3xl font-bold">Ready to transform your business with AI?</h3>
-              <p className="mt-3 text-slate-600">Start your AI journey with a free prototype. No commitment.</p>
-              <a href="#contact" className="mt-6 inline-flex items-center rounded-full bg-gradient-to-r from-sky-400 to-blue-500 text-white px-6 py-3 text-sm font-medium shadow-sm shadow-sky-200/70 hover:from-sky-500 hover:to-blue-600 transition">
-                Start Your AI Journey
-              </a>
-            </div>
-          </div>
-        </section>
+        <CTA />
       </main>
 
       <Footer />
